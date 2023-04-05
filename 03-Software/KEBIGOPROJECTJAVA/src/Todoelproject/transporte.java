@@ -1,13 +1,15 @@
 package Todoelproject;
 
+import java.util.Scanner;
+
 public class transporte {
-    int idTransporte;
-    double precio;
-    String tipo;
-    String destino;
-    String origen;
-    int puntuacion;
-    String extras;
+    protected int idTransporte;
+    protected double precio;
+    protected String tipo;
+    protected String destino;
+    protected String origen;
+    protected int puntuacion;
+    protected String extras;
 
     public transporte() {
         this.idTransporte = 0;
@@ -94,5 +96,16 @@ public class transporte {
     public void setExtras(String extras) {
         this.extras = extras;
     }
-
+    public void print(){
+        System.out.println("IDTransporte: "+idTransporte);
+        System.out.println("Tipo: "+tipo);
+        System.out.println("Origen: "+origen);
+        System.out.println("Destino: "+destino);
+        System.out.println("Extras: "+extras);
+        System.out.println("Precio: "+precio);
+        System.out.println("*****************************");
+    }
+    public void leer(Scanner teclado){
+        
+    }
 }

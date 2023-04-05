@@ -1,13 +1,13 @@
 package Todoelproject;
 
 public class alojamiento {
-    int idAlojamiento;
-    double precio;
-    String tipo;
-    String destino;
-    int puntuacion;
-    String extra;
-    String instalaciones;
+    protected int idAlojamiento;
+    protected double precio;
+    protected String tipo;
+    protected String destino;
+    protected int puntuacion;
+    protected String extra;
+    protected String instalaciones;
 
     public alojamiento() {
         this.idAlojamiento = 0;
@@ -94,5 +94,14 @@ public class alojamiento {
     public void setInstalaciones(String instalaciones) {
         this.instalaciones = instalaciones;
     }
-//ESTO ES UNA PRUEBA PARA EL GIT
+    public void print(){
+        System.out.println("IDAlojamiento: "+idAlojamiento);
+        System.out.println("Tipo: "+tipo);
+        System.out.println("Destino: "+destino);
+        System.out.println("Puntuación: "+puntuacion);
+        System.out.println("Instalaciones: "+instalaciones);
+        System.out.println("Extras: "+extra);
+        System.out.println("Precio: "+precio);
+        System.out.println("********************************");
+    }
 }

@@ -2,6 +2,9 @@
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
+        "lib/**/*.jar",
+        "lib/*.jar",
+        "global-repository/03-Software/KEBIGOPROJECTJAVA/lib/mysql-connector-java-8.0.18.jar",
+        "global-repository/03-Software/KEBIGOPROJECTJAVA/lib/mysql-connector-j-8.0.32.jar"
     ]
 }

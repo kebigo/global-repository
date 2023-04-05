@@ -6,7 +6,7 @@ public class factura implements facturacion {
     protected int IDFactura;
     protected String DNI;
     protected FechaT5 fecha;
-    protected ArrayList<LineaFactura> lineasfactura = new ArrayList<LineaFactura>();
+    protected ArrayList<LineaFactura> lineasfactura = new ArrayList<>();
     protected int total;
 
     public factura() {

@@ -1,34 +1,21 @@
 package Todoelproject;
 
+import java.util.Scanner;
+
 public abstract class persona {
     protected String DNI;
-    protected String nombre;
-    protected String apellido;
-    protected String email;
-    protected String telefono;
+    
 
     public persona() {
         this.DNI = "";
-        this.nombre = "";
-        this.apellido = "";
-        this.email = "";
-        this.telefono = "";
     }
 
     public persona(persona p) {
         this.DNI = p.DNI;
-        this.nombre = p.nombre;
-        this.apellido = p.apellido;
-        this.email = p.email;
-        this.telefono = p.telefono;
     }
 
-    public persona(String d, String n, String a, String e, String t) {
+    public persona(String d) {
         this.DNI = d;
-        this.nombre = n;
-        this.apellido = a;
-        this.email = e;
-        this.telefono = t;
     }
 
     public String getDNI() {
@@ -39,36 +26,11 @@ public abstract class persona {
         this.DNI = DNI;
     }
 
-    public String getNombre() {
-        return this.nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return this.apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public String getEmail() {
-        return this.email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getTelefono() {
-        return this.telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public abstract void print();
+    public abstract void leer(Scanner teclado);
+    @Override
+    public String toString() {
+        return ("Persona:[DNI: "+DNI+"\n");
     }
 
 }

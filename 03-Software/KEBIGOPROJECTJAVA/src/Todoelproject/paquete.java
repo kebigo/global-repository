@@ -1,10 +1,10 @@
 package Todoelproject;
 
 public class paquete {
-    int idPaquete;
-    int idTransporte;
-    int idAlojamiento;
-    double precio;
+    protected int idPaquete;
+    protected int idTransporte;
+    protected int idAlojamiento;
+    protected double precio;
 
     public paquete() {
         this.idPaquete = 0;
@@ -57,6 +57,10 @@ public class paquete {
 
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+    @Override
+    public String toString() {
+        return ("IDPaquete: "+idPaquete+"\n"+"IDTrasporte: "+idTransporte+"\n"+"IDAlojamiento: "+idAlojamiento+"\n"+"Precio: "+precio);
     }
 
 }

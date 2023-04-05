@@ -17,9 +17,9 @@
 
     <section class="hero d-flex align-items-center">
         <div class="container-lg d-flex ">
-            <div class="information col-12 col-md-6">
+            <div class="information col-6">
                 <span class="sub-title fw-bold fs-5">Descubre el mundo con nosotros</span>
-                <h2 class="title fw-semibold mt-2 fs-1">Viaja por todos los continentes y conoce nuevas culturas</h2>
+                <h2 class="title fw-semibold mt-2">Viaja por todos los continentes y conoce nuevas culturas</h2>
                 <p class="text mt-3">Sabemos que cada viaje es una oportunidad para crear recuerdos inolvidables.
                     Nos apasiona viajar tanto como a ti, y por eso nos esforzamos en diseñar viajes adaptados a tus necesidades.
                 </p>
@@ -32,107 +32,116 @@
        
     </section>
 
-    <section class="buscador container-lg mx-auto d-grid d-lg-flex justify-content-center align-items-center flex-wrap pt-4 pt-lg-0 pb-4 pb-lg-0">
-        <div class="buscador-filters d-grid d-lg-flex align-items-center justify-content-center flex-wrap px-3 px-lg-0 ">
-            <div class="filter destino col-lg pb-3 pb-lg-0">
-                <div class="label-group">
-                    <label class="label-buscador fs-5 fw-semibold" for="destinoList">Destino</label>
-                    <i class="label-icono fa-solid fa-location-dot"></i>
-                </div>
-                <input class="input-buscador border-0 text-capitalize" list="destinos" type="text" id="destinoList" placeholder="Los Angeles, CA">
-                <datalist id="destinos">
-                    <option value="platano"></option>
-                    <option value="mandarina"></option>
-                    <option value="platanito"></option>
-                </datalist>
-               </div>
-
-               <div class="filter alojamiento col-lg  ps-lg-4 pb-3 pb-lg-0 pt-3 pt-lg-0 me-5 me-lg-0">
-                <div class="label-group ">
-                    <label class="label-buscador fs-5 fw-semibold" for="alojamientos">Fechas</label>
-                    <i class="label-icono fa-solid fa-bed"></i>
-                </div>
-        
-                <input class="input-buscador border-0 text-capitalize" list="alojamientoList" type="text" id="alojamientos" placeholder="03/34 - 03/22">
-                <datalist id="alojamientoList">
-                    <option value="Hotel"></option>
-                    <option value="Camping"></option>
-                    <option value="Casa rural"></option>
-                </datalist>
-               </div>
-    
-               <div class="filter pasajeros col-lg  ps-0 ps-lg-4 pt-3 pt-lg-0 pb-3 pb-lg-0">
-                <div class="label-group">
-                    <label class="label-buscador fs-5 fw-semibold" for="pasajeros">Pasajeros</label>
-                    <i class="label-icono fa-solid fa-user"></i>
-                </div>
-        
-                <input class="input-buscador border-0 text-capitalize" list="pasajerosList" type="text" id="pasajeros" placeholder="Adultos, 2">
-                <datalist id="pasajerosList">
-                    <option value="Avion"></option>
-                    <option value="Autobus"></option>
-                    <option value="Crucero"></option>
-                </datalist>
-               </div>
-               <div class="buscador-botones d-flex justify-content-end col-lg col-12 ps-0 ps-lg-4 pt-3 pt-lg-0 pb-3 pb-lg-0 mt-4 mt-lg-0">
-                <a class="buscador-boton  d-block text-center py-2 px-4 text-decoration-none text-white rounded-pill" href="#">Buscar viajes</a>
-               </div>
+    <section class="buscador mx-auto rounded-pill d-flex align-items-center">
+       <div class="filter destino col">
+        <div class="label-group">
+            <label class="label-buscador fs-5 fw-semibold" for="destinoList">Destino</label>
+            <i class="label-icono fa-solid fa-location-dot"></i>
         </div>
-      
-    
-    </section>
+        <input class="input-buscador border-0 text-capitalize" list="destinos" type="text" id="destinoList" placeholder="Los Angeles, CA">
+        <datalist id="destinos">
+            <option value="platano"></option>
+            <option value="mandarina"></option>
+            <option value="platanito"></option>
+        </datalist>
+       </div>
+       <div class="filter alojamiento col">
+        <div class="label-group ">
+            <label class="label-buscador fs-5 fw-semibold" for="alojamientos">Alojamiento</label>
+            <i class="label-icono fa-solid fa-bed"></i>
+        </div>
 
- 
+        <input class="input-buscador border-0 text-capitalize" list="alojamientoList" type="text" id="alojamientos" placeholder="Hotel">
+        <datalist id="alojamientoList">
+            <option value="Hotel"></option>
+            <option value="Camping"></option>
+            <option value="Casa rural"></option>
+        </datalist>
+       </div>
+       <div class="filter transporte col">
+        <div class="label-group">
+            <label class="label-buscador fs-5 fw-semibold" for="transportes">Transportes</label>
+            <i class="label-icono fa-solid fa-route"></i>
+        </div>
+
+        <input class="input-buscador border-0 text-capitalize" list="transportesList" type="text" id="transportes" placeholder="Avion">
+        <datalist id="transportesList">
+            <option value="Avion"></option>
+            <option value="Autobus"></option>
+            <option value="Crucero"></option>
+        </datalist>
+       </div>
+       <div class="filter pasajeros col">
+        <div class="label-group">
+            <label class="label-buscador fs-5 fw-semibold" for="pasajeros">Pasajeros</label>
+            <i class="label-icono fa-solid fa-user"></i>
+        </div>
+
+        <input class="input-buscador border-0 text-capitalize" list="pasajerosList" type="text" id="pasajeros" placeholder="Adultos, 2">
+        <datalist id="pasajerosList">
+            <option value="Avion"></option>
+            <option value="Autobus"></option>
+            <option value="Crucero"></option>
+        </datalist>
+       </div>
+       <div class="col ">
+        <a class="info_button d-block text-center py-2 px-4 text-decoration-none text-white rounded-pill" href="#">Buscar viajes</a>
+       </div>
+       
+    </section>
 
     <section class="servicios d-flex align-items-center">
         <div class="container-lg d-flex flex-column align-items-center">
-            <h2 class="servicios-title text-center py-5 fs-2">Prepara todos tus viajes con nuestros servicios especializados</h2>
+            <h2 class="servicios-title w-50 text-center py-5 fs-2">Prepara todos tus viajes con nuestros servicios especializados</h2>
 
-            <div class="card-group w-100 d-flex flex-column flex-md-row gx-5 justify-content-center align-items-center">
-                <div class="card col-md-4 col-8 text-center border-0">
+            <div class="card-group w-100 d-flex gx-5 justify-content-center">
+                <div class="card col-4 text-center border-0">
                     <i class="servicios-icono fa-solid fa-hotel"></i>
-                    <div class="card-body px-lg-5 d-flex flex-column align-items-center">
+                    <div class="card-body px-5 d-flex flex-column align-items-center">
                       <h5 class="card-title mt-3 fs-4">Alojamiento</h5>
-                      <p class="card-text mt-2">Descubre nuevos destinos con nuestra agencia de viajes. ¡Vive experiencias inolvidables! Reserva ahora.</p>
-                      <a href="#" class="btn-servicios text-decoration-none text-white py-2 px-3 rounded-pill w-50 mt-2 d-block justify-self-end">Buscar</a>
+                      <p class="card-text mt-2">Filtra entre diferentes tipos de alojamiento. Hoteles, camping, apartamentos...</p>
+                      <a href="#" class="btn-servicios text-decoration-none text-white py-2 px-3 rounded-pill w-50 mt-2 d-block">Buscar</a>
                     </div>
                   </div>
     
-                  <div class="card col-md-4 col-8 text-center border-0 justify-content-center mt-5 mt-md-0">
+                  <div class="card col-4 text-center border-0 justify-content-center" style="width: 18rem;">
                     <i class="servicios-icono fa-solid fa-plane-departure"></i>
-                    <div class="card-body px-lg-5 d-flex flex-column align-items-center">
+                    <div class="card-body px-5 d-flex flex-column align-items-center">
                       <h5 class="card-title mt-3 fs-4">Transporte</h5>
                       <p class="card-text mt-2">Tu eliges como viajar, con wifi, con tu mascota, con tu suegra... Encuentra el mejor transporte para ti.</p>
                       <a href="#" class="btn-servicios text-decoration-none text-white py-2 px-3 rounded-pill w-50 mt-2 d-block" >Reservar</a>
                     </div>
                   </div>
     
-                  <div class="card col-md-4 col-8 text-center border-0 justify-content-center mt-5 mt-md-0">
+                  <div class="card col-4 text-center border-0 justify-content-center" style="width: 18rem;">
                     <i class="servicios-icono fa-solid fa-box-open"></i>
-                    <div class="card-body px-lg-5 d-flex flex-column align-items-center">
+                    <div class="card-body px-5 d-flex flex-column align-items-center">
                       <h5 class="card-title mt-3 fs-4 fw-semibold">Paquetes</h5>
-                      <p class="card-text mt-2 ">Organizamos tu viaje, no te preocupes. Haz las maletas y listo. ¡Sin complicaciones!</p>
+                      <p class="card-text mt-2 ">¿No quieres comerte la cabeza? Te organizamos todo tu viaje. Tu solamente tendras que hacer las maletas.</p>
                       <a href="#" class="btn-servicios text-decoration-none text-white py-2 px-3 rounded-pill w-50 mt-2 d-block">Explorar</a>
                     </div>
                   </div>
                     
                 </div>
+                
+      
 
+      
         </div>
     </section>
 
     <section class="destinos d-flex align-items-center">
         <div class="container-lg d-flex flex-column">
             <div class="row">
-                <div class="destinos-info d-flex flex-column flex-md-row align-items-md-center">
-                    <div class="destinos-title col-md-6 d-flex flex-column align-items-start">
+                <div class="destinos-info d-flex align-items-center">
+                    <div class="destinos-title col-6 d-flex flex-column align-items-start">
                         <span class="fw-bold fs-5">Los mejores destinos</span>
                         <h2 class="mt-2">Visita los lugares mas increibles del planeta </h2>
                     </div>
     
-                    <div class="destinos-count col-md-6 d-flex flex-column align-items-md-end mt-3 mt-md-0 align-items-md-end" >
+                    <div class="destinos-count col-6 d-flex flex-column align-items-end">
 
-                        <div class="contenedor d-flex flex-column flex-md-row flex-wrap align-items-md-end">
+                        <div class="contenedor">
                             <span class="destinos-count-title text-start align-self-start fw-bold">+65 Ciudades</span>
                             <p class="destinos-count-text">Te ofrecemos una amplia variedad de alojamientos para que disfrutes tus proximas vacaciones.</p>
                         </div>
@@ -141,11 +150,11 @@
                 </div>
             </div>
 
-            <div class="row cards-destino mt-5 d-flex flex-column flex-sm-row flex-wrap align-items-center justify-content-between justify-content-sm-center gap-4">
-                <div class="card card-destino p-3 col-9 col-sm-5 col-md-4 col-lg">
+            <div class="row cards-destino mt-5 d-flex justify-content-between">
+                <div class="card card-destino p-3 col-3">
                     <img src="https://placehold.co/100x100" alt="" >
                     <div class="card-body">
-                        <div class="row d-flex justify-content-between">
+                        <div class="row">
                             <h5 class="card-title col-9 fs-3">Venecia</h5>
                             <span class="card-review d-flex align-items-center justify-content-center col-3 text-white fw-bold">8,4</span>
                         </div>
@@ -161,11 +170,11 @@
                     </div>
                 </div>
 
-                <div class="card card-destino col-9 col-sm-5 col-md-4 col-lg p-3">
+                <div class="card card-destino col-3 p-3 rounded">
                     <img src="https://placehold.co/100x100" alt="" >
                     <div class="card-body">
-                        <div class="row d-flex justify-content-between">
-                            <h5 class="card-title col-9 fs-3">Lisboa</h5>
+                        <div class="row">
+                            <h5 class="card-title col-9 fs-3">New York</h5>
                             <span class="card-review col-3 d-flex align-items-center justify-content-center text-white fw-bold">8,4</span>
                         </div>
                         <div class="row d-flex align-items-center mb-3">
@@ -181,10 +190,10 @@
                     </div>
                 </div>
 
-                <div class="card card-destino col-9 col-sm-5 col-md-4 col-lg p-3">
+                <div class="card card-destino col-3 p-3 rounded">
                     <img src="https://placehold.co/100x100" alt="" >
                     <div class="card-body">
-                        <div class="row d-flex justify-content-between">
+                        <div class="row">
                             <h5 class="card-title col-9 fs-3">Sevilla</h5>
                             <span class="card-review col-3 d-flex align-items-center justify-content-center text-white fw-bold">8,4</span>
                         </div>
@@ -202,10 +211,10 @@
                     </div>
                 </div>
 
-                <div class="card card-destino col-9 col-sm-5 col-md-4 col-lg p-3">
+                <div class="card card-destino col-3 p-3 rounded">
                     <img src="https://placehold.co/100x100" alt="" >
                     <div class="card-body">
-                        <div class="row d-flex justify-content-between">
+                        <div class="row">
                             <h5 class="card-title col-9 fs-3">Paris</h5>
                             <span class="card-review col-3 d-flex align-items-center justify-content-center text-white fw-bold">8,4</span>
                         </div>
@@ -228,12 +237,12 @@
     </section>
    
     <section class="sobre-nosotros d-flex align-items-center">
-        <div class="container-lg d-flex flex-column flex-md-row">
-            <div class="sobre-nosotros-image col-12 col-sm-7 col-md-6">
-                <img class="mw-100 object-fit-cover mt-2 mt-5 mt-md-0" src="https://placehold.co/500x400" alt="" >
+        <div class="container-lg d-flex">
+            <div class="sobre-nosotros-image col-6">
+                <img src="https://placehold.co/500x400" alt="" >
             </div>
     
-            <div class="sobre-nosotros-info col-md-6 order-first order-md-last">
+            <div class="sobre-nosotros-info col-6">
                 <span class="sub-title fw-bold fs-5">Conoce mas sobre nosotros</span>
                 <h2 class="title fw-semibold mt-2">Tu mejor opcion para conocer todas las partes del mundo</h2>
                 <p class="text mt-3">En Kebigo, nos aseguramos de que cada detalle de tu viaje sea cuidadosamente seleccionado para cumplir con tus expectativas y presupuesto.
@@ -246,63 +255,110 @@
     </section>
 
     <section class="transportes d-flex align-items-center">
-        <div class="container-lg d-flex flex-column flex-md-row">
-            <div class="transportes-info col-12 col-md-5 d-flex flex-column align-items-start">
+        <div class="container-lg d-flex">
+            <div class="transportes-info col-3 d-flex flex-column align-items-start">
                 <span class="fw-bold fs-5">Muevete con nosotros</span>
-                <h2 class="mt-2 ">Viaja hasta tu destino preferido de la mejor forma.</h2>
-                <p class="text mt-3">Ya sea que estés buscando una forma rápida y eficiente de llegar a tu destino o una experiencia más relajada y lujosa, tenemos la solución perfecta para ti.</p>
-                <a class="info_button d-block text-center py-2 px-4 mt-4 text-decoration-none text-white rounded-pill" href="#">Ver transportes</a>
+                <h2 class="mt-2">Viaja hasta tu destino preferido de la mejor forma.</h2>
+                <a href="#" class="btn btn-destino col-6 text-white mt-3">Planear viaje</a>
             </div>
     
-            <div class="col transportes-cards col-12 col-md-7 d-flex justify-content-end" >
-                <div class="card-group col-12 col-xl-9 d-flex flex-column flex-sm-row align-items-center align-items-md-start justify-content-end mt-5 mt-md-0">
-                    
-                    <div class="transportes-card col-6 d-flex flex-column align-items-center align-items-md-end mt-5 mt-sm-0">
-                        <img class="rounded-pill" src="https://placehold.co/200x200" alt="" >
-                      
-
-                    </div>
-
-                    <div class="transportes-card col-6 d-flex flex-column align-items-center align-items-md-end mt-5 mt-sm-0">
-                        <img class="rounded-pill" src="https://placehold.co/200x200" alt="" >
-                    </div>
-
-                    <div class="transportes-card mt-2 mx-auto position-relative mt-5 mt-sm-0">
-                        <img class="rounded-pill" src="https://placehold.co/200x200" alt="" >
-                    </div>
+            <div class="col-9 transportes-cards d-flex justify-content-end" ">
+                <div class="card-group gap-4">
+                    <div class="card card-transporte col-2 p-3 rounded">
+                        <img src="https://placehold.co/100x100" alt="" >
+                        <div class="card-body">
+                            <div class="row">
+                                <h5 class="card-title col-9 fs-3">Avion</h5>
+                                <span class="card-review col-3 d-flex align-items-center justify-content-center text-white fw-bold">8,4</span>
+                            </div>
+    
+                            <div class="row d-flex align-items-center mb-3">
+                                <i class="card-icono fa-solid fa-location-dot col-1"></i>
+                                <p class="card-text col-10">Francia</p>
+                            </div>
                         
-                    
+                            <div class="row d-flex align-items-center">
+                                <p class="card-price col-6 my-0 fw-semibold">320€/ida</p>
+                                <a href="#" class="btn btn-destino col-6 text-white">Reservar</a>
+                            </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card card-transporte col-2 p-3 rounded">
+                        <img src="https://placehold.co/100x100" alt="" >
+                        <div class="card-body">
+                            <div class="row">
+                                <h5 class="card-title col-9 fs-3">Autobus</h5>
+                                <span class="card-review col-3 d-flex align-items-center justify-content-center text-white fw-bold">8,4</span>
+                            </div>
+    
+                            <div class="row d-flex align-items-center mb-3">
+                                <i class="card-icono fa-solid fa-location-dot col-1"></i>
+                                <p class="card-text col-10">Francia</p>
+                            </div>
+                        
+                            <div class="row d-flex align-items-center">
+                                <p class="card-price col-6 my-0 fw-semibold">82€/ida</p>
+                                <a href="#" class="btn btn-destino col-6 text-white">Reservar</a>
+                            </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card card-transporte col-2 p-3 rounded">
+                        <img src="https://placehold.co/100x100" alt="" >
+                        <div class="card-body">
+                            <div class="row">
+                                <h5 class="card-title col-9 fs-3">Crucero</h5>
+                                <span class="card-review col-3 d-flex align-items-center justify-content-center text-white fw-bold">8,4</span>
+                            </div>
+    
+                            <div class="row d-flex align-items-center mb-3">
+                                <i class="card-icono fa-solid fa-location-dot col-1"></i>
+                                <p class="card-text col-10">Francia</p>
+                            </div>
+                        
+                            <div class="row d-flex align-items-center">
+                                <p class="card-price col-6 my-0 fw-semibold">900€</p>
+                                <a href="#" class="btn btn-destino col-6 text-white">Reservar</a>
+                            </div>
+                          
+                        </div>
+
+                        
+                    </div>
                 </div>
             </div>
         </div>
         
     </section>
 
-    <section class="oferta d-flex align-items-center mt-3">
-        <div class="container-lg d-flex flex-column flex-md-row align-items-center align-items-md-start ">
+    <section class="oferta d-flex align-items-center mt-4">
+        <div class="container-lg d-flex">
 
-            <div class="oferta-image1 col-3 d-none d-md-flex align-items-start justify-content-start">
-                <img class=" mt-5 mw-100 object-fit-contain" src="https://img.freepik.com/vector-gratis/mapa-aislado-ubicacion_1308-21475.jpg?w=900&t=st=1680681076~exp=1680681676~hmac=f30f817604c83ae4a83a465be2c3f66aa076e0036aaaa0e11c5a171b936a77a6" alt="" >
+            <div class="oferta-image1 col-3">
+                <img class="mt-5" src="https://placehold.co/320x400" alt="" >
             </div>
     
-            <div class="oferta-info col-12 col-md-6 text-center d-flex flex-column align-items-center">
+            <div class="oferta-info col-6 text-center p-4">
                 <span class="fw-bold fs-5">Reserva ahora un viaje</span>
                 <h2 class="mt-2">Llevate un 15% de descuento para tu proxima aventura</h2>
                 <p class="mt-3 mx-auto w-75">
                     Nos complace ofrecerte una oferta especial del 15% de descuento en cualquier reserva que realices con nosotros. 
                 </p>
                 <a href="#" class="btn btn-destino text-white px-4 mt-2">Reservar</a>
-                <img class="d-block mx-auto mt-5 mb-5 mb-md-0 order-first order-md-last mw-100"src="https://placehold.co/320x130" alt="" >
+                <img class="d-block mx-auto mt-5"src="https://placehold.co/320x130" alt="" >
             </div>
     
-            <div class="oferta-image2 col-12 col-md-3 d-flex justify-content-center">
-                <img class="mw-100 object-fit-cover" src="https://img.freepik.com/vector-gratis/pareja-plana-viajando_23-2148177857.jpg?w=826&t=st=1680678454~exp=1680679054~hmac=ac5eb19f51ff30429019219167c38980b1bd9d96a1f50675c97cd29feea1aeb4" height="500px" alt="" >
+            <div class="oferta-image2 col-3">
+                <img src="https://placehold.co/320x450" alt="" >
             </div>
         </div>
        
     </section>
 
-    <section class="paquetes col-12 d-flex align-items-center">
+    <section class="paquetes d-flex align-items-center ">
         <div class="container-lg d-flex flex-column align-items-center text-center">
             <div class="paquetes-info">
                 <span class="fw-bold fs-5">Reserva ahora un viaje</span>
@@ -312,8 +368,8 @@
                 </p>
             </div>
 
-            <div class="paquetes-cards d-flex gap-4 mt-5 flex-wrap justify-content-center">
-                <div class="card card-paquete p-3 col-9 col-md">
+            <div class="paquetes-cards d-flex gap-5 mt-5">
+                <div class="card card-paquete p-3 col-4">
                     <img src="https://placehold.co/100x100" alt="" >
                     <div class="card-body pb-0 d-flex flex-column align-items-center">
 
@@ -335,7 +391,7 @@
                     </div>
                 </div>
 
-                <div class="card card-paquete p-3 col-9 col-md d-none d-lg-flex">
+                <div class="card card-paquete p-3 col-4">
                     <img src="https://placehold.co/100x100" alt="" >
                     <div class="card-body pb-0 d-flex flex-column align-items-center">
 
@@ -357,7 +413,7 @@
                     </div>
                 </div>
 
-                <div class="card card-paquete p-3 col-md d-none d-md-flex">
+                <div class="card card-paquete p-3 col-4">
                     <img src="https://placehold.co/100x100" alt="" >
                     <div class="card-body pb-0 d-flex flex-column align-items-center">
 
@@ -367,7 +423,7 @@
                         <div class="paquete-card-info row d-flex w-100 pt-2 mt-3">
                             <div class="reviews col-6 d-flex justify-content-start align-items-center ps-0">
                                 <i class="reviews-icon me-2 bi bi-circle-fill"></i>
-                                <p class="d-block mb-0 ">954 reviews</p>
+                                <p class="d-block mb-0 ">1954 reviews</p>
                             </div>
 
                             <div class="paquete-card-price col-6 d-flex justify-content-end pe-0">
@@ -383,25 +439,25 @@
     </section>
 
     <section class="reseñas d-flex align-items-center">
-        <div class="container-lg d-flex flex-column flex-md-row">
-            <div class="reseñas-image d-flex col col-md-6 order-last order-md-first justify-content-center">
-                <img class="w-100 object-fit-cover mt-5 mt-md-0" src="https://img.freepik.com/foto-gratis/alegre-mujer-mediana-edad-cabello-rizado_1262-20859.jpg?w=1380&t=st=1680687515~exp=1680688115~hmac=97debb57623b6284c547bf0c398255b7bdefaa21fba1fb60183b405fc012e36e" alt="" >
+        <div class="container-lg d-flex">
+            <div class="reseñas-image col-6">
+                <img src="https://placehold.co/500x500" alt="" >
             </div>
 
-            <div class="reseñas-info col col-md-6 ps-md-5">
+            <div class="reseñas-info col-6 ">
                 <span class="sub-title fw-bold fs-5">No lo decimos nosotros</span>
                 <h2 class="title fw-semibold mt-3 w-75">Esto dicen nuestros cliente sobre Kebigo</h2>
                 <i class="icon fa-solid fa-quote-left"></i>
                 <p class="text mt-2">Kebigo es una agencia de viajes excepcional. Desde el momento en que comencé a planificar mi viaje, se aseguraron de que tuviera una experiencia inolvidable. Su servicio al cliente es de primera clase, y siempre están disponibles para responder a cualquier pregunta o preocupación que pueda tener.
                 </p>
 
-                <div class="row reseñas-bottom d-flex align-items-center mt-5 pe-md-5" >
-                    <div class="user-info col-8 p-0">
+                <div class="row reseñas-bottom d-flex align-items-center mt-5" >
+                    <div class="user-info col-6">
                         <h5 class="fw-bold">Ana María García</h5>
                         <h6>Gerente de Marketing Digital</h6>
                     </div>
 
-                    <div class="slider-control col-4 d-flex justify-content-end p-0">
+                    <div class="slider-control col-6 d-flex justify-content-end">
                         <button class="me-2 rounded text-white fs-5 fw-bold "><i class="fa-solid fa-caret-left"></i></button>
                        <button class="rounded text-white fs-5 fw-bold"><i class="fa-solid fa-caret-right"></i></button>
                     </div>
@@ -412,8 +468,8 @@
     </section>
 
     <section class="newsletter">
-        <div class="container-lg d-flex flex-column flex-md-row align-items-center p-5 mt-5">
-            <div class="newsletter-info col-12 col-md-6 pe-5">
+        <div class="container-lg d-flex align-items-center p-5 ">
+            <div class="newsletter-info col-6 pe-5">
                 <span class="sub-title fw-bold fs-5">Recibe contenido exclusivo</span>
                 <h2 class="title mt-2">Registrate en nuestra nueva newsletter</h2>
                 <p class="mt-3 mx-auto">
@@ -421,10 +477,10 @@
                 </p>
             </div>
 
-            <div class="newsletter-input col-12 col-md-6 d-flex justify-content-end mt-4 mt-md-0">
+            <div class="newsletter-input col-6 d-flex justify-content-end">
                 <label class="position-relative d-flex w-100">
                     <input class="fs-6 " type="text" name="" id="" placeholder="Correo electronico...">
-                    <a href="#" class=" d-block rounded-pill btn btn-destino text-white px-4 h-50 position-absolute"><i class="fa-solid fa-paper-plane"></i></a>
+                    <a href="#" class=" d-block rounded-pill btn btn-destino text-white px-4 h-50 position-absolute">Subscribir</a>
                 </label>
                
             </div>
