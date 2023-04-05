@@ -1,0 +1,62 @@
+package Todoelproject;
+
+public class paquete {
+    int idPaquete;
+    int idTransporte;
+    int idAlojamiento;
+    double precio;
+
+    public paquete() {
+        this.idPaquete = 0;
+        this.idTransporte = 0;
+        this.idAlojamiento = 0;
+        this.precio = 0;
+    }
+
+    public paquete(paquete p) {
+        this.idPaquete = p.idPaquete;
+        this.idTransporte = p.idTransporte;
+        this.idAlojamiento = p.idAlojamiento;
+        this.precio = p.precio;
+    }
+
+    public paquete(int p, int t, int a, double pr) {
+        this.idPaquete = p;
+        this.idTransporte = t;
+        this.idAlojamiento = a;
+        this.precio = pr;
+    }
+
+    public int getIdPaquete() {
+        return this.idPaquete;
+    }
+
+    public void setIdPaquete(int idPaquete) {
+        this.idPaquete = idPaquete;
+    }
+
+    public int getIdTransporte() {
+        return this.idTransporte;
+    }
+
+    public void setIdTransporte(int idTransporte) {
+        this.idTransporte = idTransporte;
+    }
+
+    public int getIdAlojamiento() {
+        return this.idAlojamiento;
+    }
+
+    public void setIdAlojamiento(int idAlojamiento) {
+        this.idAlojamiento = idAlojamiento;
+    }
+
+    public double getPrecio() {
+        return this.precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+}
